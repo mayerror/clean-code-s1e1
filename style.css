@@ -40,7 +40,7 @@ input,button {
 .task-text {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add__task {
@@ -117,7 +117,6 @@ input,button {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +134,7 @@ input,button {
 }
 
 .list__edit-text {
-  width: 226px
+  width: 226px;
 }
 
 .list__btn-delete:hover {
@@ -160,12 +159,12 @@ input,button {
 
 /* Edit Task */
 .list__edit-text {
-  display: none
+  display: none;
 }
 
 .list__task_mode_edit .list__edit-text {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list__task_mode_edit .list__saved-text {
