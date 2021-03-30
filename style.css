@@ -1,5 +1,6 @@
 /* Reset default (exclusion according to 3.4) */
-input,button {
+input,
+button {
   outline: none;
 }
 
@@ -52,7 +53,7 @@ input,button {
   padding: 0px;
 }
 
-.list__task,h3 {
+.list__task {
   list-style: none;
 }
 
