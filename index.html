@@ -11,20 +11,24 @@
     <a class="header__more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <section id="add" class="add">
-      <h3 class="add__title title">Add Item</h3>
+    <section id="add" class="add">                  <!-- according to BEM: "add" - block -->
+      <h3 class="add__title title">Add Item</h3>    <!-- "add__title" - element etc.-->
       <div class="add__task">
-        <input id="new-task" class="add__task-text task-text input-text" type="text">
+        <input id="new-task" class="add__task-text 
+                                    task-text 
+                                    input-text" type="text">
         <button class="add__btn-add button">Add</button>
       </div>
     </section>
     <section class="todo">
-      <h3 class="title">Todo</h3>
-      <ul class="list" id="incompleted-tasks">
-        <li class="list__task">
+      <h3 class="title">Todo</h3> 
+      <ul class="list" id="incompleted-tasks">  <!-- according to BEM: "list" - block -->
+        <li class="list__task">                 <!-- "list__task" - element etc.-->
           <input class="list__checkbox" type="checkbox">
           <label class="list__saved-text task-text">Pay Bills</label>
-          <input class="list__edit-text task-text input-text" type="text">
+          <input class="list__edit-text 
+                        task-text 
+                        input-text" type="text">
           <button class="list__btn-edit button">Edit</button>
           <button class="list__btn-delete button">
             <img class="list__pic-delete" src="./remove.svg" alt="remove">
@@ -33,7 +37,9 @@
         <li class="list__task list__task_mode_edit">
           <input class="list__checkbox" type="checkbox">
           <label class="list__saved-text task-text">Go Shopping</label>
-          <input class="list__edit-text task-text input-text" type="text" value="Go Shopping">
+          <input class="list__edit-text 
+                        task-text 
+                        input-text" type="text" value="Go Shopping">
           <button class="list__btn-edit button">Save</button>
           <button class="list__btn-delete button">
             <img class="list__pic-delete" src="./remove.svg" alt="remove">
@@ -47,7 +53,9 @@
         <li class="list__task">
           <input class="list__checkbox" type="checkbox" checked>
           <label class="list__saved-text task-text">See the Doctor</label>
-          <input class="list__edit-text task-text input-text" type="text">
+          <input class="list__edit-text 
+                        task-text 
+                        input-text" type="text">
           <button class="list__btn-edit button">Edit</button>
           <button class="list__btn-delete button">
             <img class="list__pic-delete" src="./remove.svg" alt="remove">
