@@ -6,52 +6,56 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="page">
-  <div class="header">
+  <header class="header">
     <img class="header__img" src="./eisenhower-matrix.jpg">
     <a class="header__more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main">
-    <p id="add" class="add">
-      <label for="new-task" class="add__title title">Add Item</label>
+  </header>
+  <main class="main">
+    <section id="add" class="add">
+      <h3 class="add__title title">Add Item</h3>
       <div class="add__task">
         <input id="new-task" class="add__task-text task-text input-text" type="text">
         <button class="add__btn-add button">Add</button>
       </div>
-    </p>
-    <h3 class="title">Todo</h3>
-    <ul class="list" id="incompleted-tasks">
-      <li class="list__task">
-        <input class="list__checkbox" type="checkbox">
-        <label class="list__saved-text task-text">Pay Bills</label>
-        <input class="list__edit-text task-text input-text" type="text">
-        <button class="list__btn-edit button">Edit</button>
-        <button class="list__btn-delete button">
-          <img class="list__pic-delete" src="./remove.svg">
-        </button>
-      </li>
-      <li class="list__task list__task_mode_edit">
-        <input class="list__checkbox" type="checkbox">
-        <label class="list__saved-text task-text">Go Shopping</label>
-        <input class="list__edit-text task-text input-text" type="text" value="Go Shopping">
-        <button class="list__btn-edit button">Save</button>
-        <button class="list__btn-delete button">
-          <img class="list__pic-delete" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-    <h3 class="title">Completed</h3>
-    <ul class="list" id="completed-tasks">
-      <li class="list__task">
-        <input class="list__checkbox" type="checkbox" checked>
-        <label class="list__saved-text task-text">See the Doctor</label>
-        <input class="list__edit-text task-text input-text" type="text">
-        <button class="list__btn-edit button">Edit</button>
-        <button class="list__btn-delete button">
-          <img class="list__pic-delete" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
-  </div>
+    </section>
+    <section class="todo">
+      <h3 class="title">Todo</h3>
+      <ul class="list" id="incompleted-tasks">
+        <li class="list__task">
+          <input class="list__checkbox" type="checkbox">
+          <label class="list__saved-text task-text">Pay Bills</label>
+          <input class="list__edit-text task-text input-text" type="text">
+          <button class="list__btn-edit button">Edit</button>
+          <button class="list__btn-delete button">
+            <img class="list__pic-delete" src="./remove.svg">
+          </button>
+        </li>
+        <li class="list__task list__task_mode_edit">
+          <input class="list__checkbox" type="checkbox">
+          <label class="list__saved-text task-text">Go Shopping</label>
+          <input class="list__edit-text task-text input-text" type="text" value="Go Shopping">
+          <button class="list__btn-edit button">Save</button>
+          <button class="list__btn-delete button">
+            <img class="list__pic-delete" src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="completed">
+      <h3 class="title">Completed</h3>
+      <ul class="list" id="completed-tasks">
+        <li class="list__task">
+          <input class="list__checkbox" type="checkbox" checked>
+          <label class="list__saved-text task-text">See the Doctor</label>
+          <input class="list__edit-text task-text input-text" type="text">
+          <button class="list__btn-edit button">Edit</button>
+          <button class="list__btn-delete button">
+            <img class="list__pic-delete" src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
