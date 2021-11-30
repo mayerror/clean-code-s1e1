@@ -1,9 +1,11 @@
 /* Reset default (exclusion according to 3.4) */
-input, button {
+input, 
+button {
   outline: none;
 }
 
-li, h3 {
+li, 
+h3 {
   list-style: none;
 }
 
