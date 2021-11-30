@@ -10,17 +10,17 @@
     <a class="header__more" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
   <main class="main">
-    <section id="add-section">
-      <h3 class="title add-section__title">Add Item</h3>
-      <div class="add-section__task">
-        <input id="new-task"  type="text" class="task-text input-text add-section__task-text">
+    <section id="add-section">                              <!-- according to BEM: "add-section" - block -->
+      <h3 class="add-section__title title">Add Item</h3>    <!-- "add-section__title" - element -->
+      <div class="add-section__task">                       <!-- "add-section__task" - element etc.-->
+        <input id="new-task"  type="text" class="add-section__task-text task-text input-text">
         <button class="button">Add</button>
       </div>
     </section>
     <section class="todo">
       <h3 class="title">Todo</h3>
-      <ul id="incompleted-tasks" class="list">
-        <li class="list__task">
+      <ul id="incompleted-tasks" class="list">              <!-- according to BEM: "list" - block -->
+        <li class="list__task">                             <!-- "list__task" - element etc.-->
           <input type="checkbox" class="list__checkbox">
           <label class="task-text list__text">Pay Bills</label>
           <input type="text" class="task-text input-text list__edit-text">
